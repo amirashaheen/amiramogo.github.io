@@ -1,0 +1,450 @@
+*{box-sizing: border-box;}
+prespective:500px;
+/* global style*/
+body{font-family: 'Montserrat', 'sans-serif','arial';line-height: 1.5vh}
+.container{width:91.66%;margin: auto}
+.font-Kaushan{font-family:  'Kaushan Script', 'cursive','Arial';font-size:2vw}
+.fl-left{float: left}
+.fl-right{float: right}
+.overhidden{overflow: hidden}
+.threediv{float: left;width:31%;margin-right: 2%;margin-bottom: 2em }
+.lastchild{margin-right: 0}
+p,q,h1,h2,h3,h4,h5,h6,span,a{letter-spacing: .2vw}
+p{color: #949494}
+p:first-child,.info p{color: #333}
+h1{ font-size:8vw;text-transform: uppercase;text-align: center}
+h2{
+    font-size:4vw;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 5vw;
+}
+ h2:after{ /*border under header in each section*/
+  content: "";
+  position: absolute;
+  top: -4vh;
+     left:45%;
+  width:10%;
+  border: 2px solid #F38181;
+}
+h5,h6{font-style: italic;color:#949494 }
+ul{margin: 0; padding:0; list-style:none}
+a{
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    cursor: pointer
+}
+.white{color: white}
+.green{color:#95e1d4 }
+li a{color: white}
+i{color:#95e1d4 }
+.info{margin-bottom: 5vh;text-align: center}
+.over h5,.over h6,.over h3,.over i{
+    color: #fff;margin: 2vh}
+.overlayer{
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.8);
+    top:0;
+    left:0;
+    position: absolute;
+    z-index:-1
+}
+.about,.ourservices,.do,.testmonials,.mysliders,.symbol,.our-clients,.blog,.work,.team{padding: 4em 0}
+img{width:100%;height: 100%}
+/*end global */
+
+
+/* header*/
+.gradientimage {
+    background-size: cover;
+    background: rgb(65, 161, 226);
+    background:  linear-gradient(to top, rgba(255, 201, 56, 0.75), rgba(255, 80, 82, 0.75));
+    background-image: -o-linear-gradient(to top, rgba(255, 201, 56, 0.75), rgba(255, 80, 82, 0.75)),url("http://shawndoylemotivates.com/wp-content/uploads/2015/06/be-confident-1080x675.jpg");
+    background-image: -moz-linear-gradient(to top, rgba(255, 201, 56, 0.75), rgba(255, 80, 82, 0.75)),url("http://shawndoylemotivates.com/wp-content/uploads/2015/06/be-confident-1080x675.jpg");
+    background-image: -webkit-linear-gradient(to top, rgba(255, 201, 56, 0.75), rgba(255, 80, 82, 0.75)),url("http://shawndoylemotivates.com/wp-content/uploads/2015/06/be-confident-1080x675.jpg");
+    
+    background-image: linear-gradient(to top, rgba(255, 201, 56, 0.75), rgba(255, 80, 82, 0.75)),url("http://shawndoylemotivates.com/wp-content/uploads/2015/06/be-confident-1080x675.jpg");
+    
+}
+.top-nav{min-height: 15vw;position: relative}
+.logo{width: 15%;
+    text-transform: capitalize;
+    font: bold 3vw Arial;
+    padding: .7vh 2vw;
+}
+.top-menu{float: right;width: 70%}
+/* select diect menu items.*/
+.top-menu ul{ text-align: right}
+.top-menu > li{float: left;padding: 3vh 1.5vw;}
+.top-menu > li i{color: #fff}
+.top-menu > li:hover a,.top-menu > li:hover i{
+    color:#534d4d;
+    text-decoration: underline;
+    text-decoration-color:#505050
+}
+.top-menu .services{position: relative}
+.top-menu .services .dropmenu {
+    position: absolute;
+    display: none;
+    background: #fff;
+}
+.top-menu .services .dropmenu li{ padding: .6em}
+.top-menu .services .dropmenu li a{text-decoration: none}
+.top-menu .services:hover .dropmenu{display: block}
+.logocontents { text-align: center;padding: 2em 0}
+.logocontents button{ 
+    display: block;
+    background: transparent;
+    border: 2px solid;
+    margin: auto;
+    padding: 1em;
+    margin-top: 2em
+}
+.ratios{overflow: hidden;padding-top: 2em 0}
+.ratios div.ratio{width: 20%;margin-right:5%}
+.ratios .ratio .myratio{background: #fff;height: 5px}
+.ratios .myratio span.ratiocolor{display: block;
+    margin-bottom: 10px;
+    background-color: #f38181;
+    color: #080;
+    height: 5px;
+  }
+.ratios .ratio span{margin-bottom: 30px;display: block;}
+/*js code.*/
+/*end of first page*/
+
+/*start about us section*/
+.about-images > div{
+    height: 20em;position: relative;margin-top: 2em}
+.about-images >div .over,.work .work-images .over{
+    background-image:linear-gradient(to top, rgba(255, 201, 56, 0.75), rgba(255, 80, 82, 0.75));
+    width:100%;
+    height:100%;
+    opacity:0;
+    left:0;
+    top:0;
+    position: absolute;
+    padding-top: 45%;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.about-images .over:hover{
+    opacity:1;
+    box-shadow: 5px 5px 0 #95e1d4 1;
+    transform:translate(-10px,-10px);
+    transition: all .5s ease;
+    box-shadow: 10px 10px 0 #95e1d4
+}
+.greenbox{background:#95e1d4;margin-top: 2em}
+.greenbox .numb{float: left;width:20%;border: 1px solid #fff;padding: 2em 1em;text-align: center}
+.greenbox .numb span{display: block;font-size: 5vw}
+
+/*start services section*/
+.ourservices  hr{
+    border: 1px solid #d2d2d2}
+.ourservices .service{text-align: left}
+.ourservices .service i{
+    color: #95e1d4;
+    margin-top: .7em;
+    width: 100%;
+    margin-right: 10%;
+    width: 10%
+}
+.ourservices .service div:last-of-type{width: 80%}
+
+/*start uniqe design*/
+.uniquedesign{
+    background: url("../image/background%20%20tablet.jpg") no-repeat ;
+    background-size: cover;
+    position: relative;
+    z-index: 1
+}
+
+.uniquedesign .group{
+    position: relative;
+    width: 50%;
+    margin:auto;
+    height: 25em
+}
+.tablet{
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    width: 80%;
+    height: 25em;
+    padding: 2em 1em 0 1em;
+    z-index: 1;
+    position: absolute 
+}
+.tablet .black-ring{width: .4em;height: .4em ;border-radius: 50% ;border: 1px solid #333;margin: auto}
+.tablet .black-border{border: 2px solid #333 }
+.tablet img{width: 100%; padding: 1px}
+.mobail{
+position: absolute;
+    width: 30%;
+    top:40%;
+    left:65%;
+    z-index:2
+}
+.mobail img{width:100%}
+.tablet:hover{ z-index:3 }
+
+/*start what we do section*/
+.do{padding-bottom: 2em}
+.do-image{width: 45%;margin-right: 5%}
+.do-image img{width: 100%}
+.photo-select{width: 50%}
+.photo-select li a{color: #333;display:inline-block;padding: 1em 0}
+.photo-select li{
+    text-align: left;
+    border:1px solid #ccc;
+    margin-bottom: .7em;
+    width: 100%;
+    position: relative
+}
+.photo-select li p{position: relative;display: none;;padding: 1% }
+.photo-select li p:before{
+    content: "";
+    position: absolute;
+    top: -1em;
+    left:0;
+    border: 1px solid #ccc;
+    width: 100%
+}
+.photo-select .show{ display: block}
+.photo-select li a.expand-arrow:after {
+    color:#95e1d4;
+    content: "";
+    right: 5%;
+    position: absolute;
+    font-family: "FontAwesome"; 
+}
+.photo-select li a.collapsed-arrow:after {
+    color: #95e1d4;
+    content: "";
+    right: 5%;
+    position: absolute;
+    font-family: "FontAwesome"   
+}
+
+/*start testmonials section */
+.testmonials,.mysliders{ background-color: #ededed}
+.testmonials a,.mysliders a{
+    display: block;width:10%;padding: 4em 0}
+.testmonials a:hover,.mysliders a:hover{color: #7e7c7c}
+.testmonials .sliders,.mysliders .sliders{
+    width: 70%;
+    margin-right: 4%;
+    margin-left:4%;
+    text-align: left
+}
+.testmonials .itag,.mysliders .sliders .person{
+    width: 20%;margin-right: 10%}
+.testmonials .itag i{border: 2px solid #95e1d4;padding: .4em }
+.testmonials .sliders  q,.mysliders .container .sliderSec q{color: #949494;width: 70%}
+.testmonials .sliders  span,.mysliders .container .sliderSec span{
+    font-family: 'Kaushan Script', 'cursive' ;font-size:1.3em}
+.testmonials .container span:before,.mysliders .container .sliderSec span:before{
+ content: "";
+  width:15%;
+  border: 2px solid #f38181;
+ display: inline-block;
+    margin-right: 1em
+}
+/*start team section */
+.team .threediv{position: relative;padding-left: .7em}
+.team .threediv img{width: 100%;height: 25em}
+.team .threediv:hover .shadow{
+    /*علشان اظهر المربع اللي فوق الصوره لما اعمل هفر*/
+    background: linear-gradient(rgba(255,0,0,.6),rgba(255,255,0,.6));
+    width: 100%;
+    min-height: 25em;
+    position: absolute;
+    top:-.7em;
+    left:-.7em;
+    -webkit-box-shadow :.7em .7em 0 #95e1d4;
+    -moz-box-shadow :.7em .7em  0 #95e1d4;
+    -o-box-shadow :.7em .7em  0 #95e1d4;
+    box-shadow :.7em .7em  0 #95e1d4;
+}
+.team .threediv div{display: none}
+.team .threediv i{color:#f38181;width: 23.36%;text-align: center;line-height: 1.3em }
+.team .threediv i:hover{
+    color: #fff;
+    background: #f38181;
+}
+.team .threediv:hover div {
+    display: block;
+    background: #fce38a;
+    float: left;
+    width: 70%;
+    position: absolute;
+    top:50%;
+    left: 15%;
+}
+
+/*start symbol section*/
+.symbol{background: #f8f8f8}
+.symbol .container > div {margin: 0 1%;width: 14%;float: left}
+.symbol img{width: 100%}
+.symbol .container > div:hover{transform:rotate(360deg) scale(1.4);
+transition: all .7s ease-in-out;
+}
+
+/*start work section*/
+.work .work-images{padding-top: 2vh}
+.work .work-images  img{width: 100%;height: 100%}
+.work .work-images .left,.work .work-images .second{width:50%}
+.work-images .left>div,.work-images .second > div{width: 50%;;height: 250px}
+.work .work-images > div > div{position: relative}
+.work .work-images > div > div:hover .over{opacity: 1}
+
+/* start slider 2 section */
+.mysliders .person{
+    border-radius: 50%;
+    background: #fff;
+    padding: .2em;
+    
+}
+.mysliders .person img{ border-radius: 50%;width: 100%}
+
+/* start what people say*/
+
+.our-clients{
+    background: url('../image/background%20%20tablet.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 1
+} 
+.our-clients .clients .client{width: 50%;padding: .2em}
+.our-clients .client div:first-of-type{width:20%}
+.our-clients .client div:first-of-type img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: -2px -2px 4px #949494;
+    padding: .3em
+}
+.our-clients .client img:hover{
+    transition: all  .2s ease-in-out;
+    transform: rotatey(90deg) scale(1.4)
+}
+
+.our-clients .clients .client-info{
+    width:60%;position: relative;margin:0 10%} 
+.our-clients .clients .client-info p:first-child{color: #111}
+.our-clients .clients .client hr{
+    width:20%;
+    border:2px solid #f38181;
+    left: 0;top:80px;
+    position: absolute;
+    margin-bottom: 10px
+}
+
+/* start map section */
+.map{height:20em;width:100%;position: relative}
+.map .overlayer{z-index: 0}
+.map .text{position: absolute;top:20vh;left: 45%}
+.map .text i,.map .text h3{color: #f38181}
+.map hr {border: 2px solid #f38181}
+/* start Blog story section */
+.blog .allblog .threediv{padding: 0 .7rem}
+.blog .allblog .blog-image img{width: 100%;height:260px}
+.blog .allblog .blog-image h3{text-transform: uppercase}
+.blog .allblog .blog-image{position: relative}
+.blog .allblog .blog-image div:first-of-type{
+    position: absolute;
+    top:30%;
+    left:-1vw;
+    background: #95e1d4;
+    font-size: 3vw;
+    width:25%;
+    text-align: center;  
+}
+.blog .allblog .blog-image div:first-of-type:hover{
+    text-shadow: 3px 3px 2px #111;transition: all .3s linear}
+.blog .allblog .blog-image i span {
+    color: #949494;transition: all .3s linear}
+.blog .allblog .blog-image i:hover{
+    transform: scale(1.4);margin-left: 1em}
+
+/* start footer section*/
+.footer{padding-top: 4em}
+.footer .container div:first-of-type h3{
+    font-size:4vw;line-height:4vw;color: #ccc}
+.footer  .footer-social{margin: 1em 0;padding: 1em 0}
+.footer .footer-social i{ padding:0 .2em}
+.footer  .container div:first-of-type form input{
+    width:60%;
+    padding: .9em;
+    border: 1px solid #ccc;
+    font-style: italic;
+    color: #949494
+}
+.footer .container div:first-of-type form button{
+    border: none;
+    width: 40%;
+    background:#95e1d4;
+    color: #fff;
+    padding: 1em 
+}
+ .footer hr{
+    width:100%;
+    border:1px solid #d2d2d2;
+}
+.footer .followers span{color: #111}
+.footer .footer-top > div:first-of-type{
+    width: 35%;margin-right: 5%}
+.footer .footer-top >div:nth-of-type(2),
+.footer .footer-top >div:nth-of-type(3){
+    width: 28%;margin-right: 1%; margin-bottom: 10px}
+.footer .footer-top >div:nth-of-type(2) img{ width:35%;margin-right: 2%;float: left;height: 75px;margin-bottom: 20px}
+.footer .footer-top >div:nth-of-type(2) div div{
+    width: 63%}
+.footer .footer-top >div:nth-of-type(2) h5{
+    font-size: 1.2vw ;
+    font-style: normal;
+    text-transform: capitalize;
+    color: #111;
+    margin: 0}
+.footer .footer-top >div:nth-of-type(2) span{
+font-size: 1vw;color: #949494;font-style: italic}
+.footer .footer-top >div:nth-of-type(3) img {
+    width: 100%;height: 75px}
+.footer .footer-top{padding-bottom: 2em }
+.footer .footer-bottom{text-align: center;padding: 2em}
+.footer .footer-bottom a{color: #95e1d3;text-transform: capitalize;padding: 1em}
+.footer .footer-bottom a:hover{color:#f38181 }
+
+/* start scrolltop  button section */
+.scroll-top { bottom: 2em;
+    margin-bottom: 0;
+    padding-top: 1em;
+    position: fixed;
+    right: 2em;
+    z-index: 998;
+    display: none
+}
+.diamond{
+     width: 0;
+     height: 0;
+     border: 2em solid transparent;
+     border-bottom-color: #F38181;
+     position: relative;
+     top: -1em;
+     
+}
+.diamond:after{ 
+    content: '';
+    position: absolute;
+    left: -2em;
+    top: 2em;
+    width: 0;
+    height: 0;
+    border: 2em solid transparent;
+    border-top-color: #F38181;
+}
+.scroll-top i{
+    position: absolute;top: 1.35em;left:.5em;color: #fff}
+.scroll-top:hover i{color: #ccc}
